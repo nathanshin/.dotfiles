@@ -2,6 +2,7 @@
 
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
