@@ -132,7 +132,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 ###############################################################################
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/init/Dracula.itermcolors"
+open "${HOME}/.dotfiles/init/Dracula.itermcolors"
 
 ###############################################################################
 # Activity Monitor                                                            #
