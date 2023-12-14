@@ -49,5 +49,11 @@ brew install ack
 brew install git
 brew install tree
 
+# Install casks
+brew install evernot
+brew install iterm2
+brew install sequel-pro
+brew install spotify
+
 # Remove outdated versions from the cellar.
 brew cleanup
