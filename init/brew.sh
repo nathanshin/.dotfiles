@@ -59,5 +59,6 @@ brew install obsidian
 brew install protonmail-bridge
 brew install spotify
 
+
 # Remove outdated versions from the cellar.
 brew cleanup
