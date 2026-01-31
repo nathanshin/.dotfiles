@@ -1,7 +1,23 @@
 # Aliases
 
 # List all files and directories
-alias ls="ls -al"
+# alias ls="ls -al"
+alias ls="eza -lh --group-directories-first"
+alias lsa="ls -a"
+alias lt="eza --tree --level=2 --long --git"
+alias lta="lt -a"
+
+# Easier cd
+alias cd="zd"
+zd() {
+  if [ $# -eq 0 ]; then
+    builtin cd ~ && return
+  elif [ -d "$1" ]; then
+    builtin cd "$1"
+  else
+    z "$@" || echo "Error: Directory not found"
+  fi
+}
 
 # Get ip address
 alias ip="ipconfig getifaddr en0"

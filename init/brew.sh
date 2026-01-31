@@ -48,15 +48,21 @@ brew install screen
 brew install ack
 brew install git
 brew install tree
+brew install eza
+brew install zoxide
+brew install btop
+brew install fastfetch
+brew install ripgrep
 
 # Install casks
-brew install 1password
 brew install chatgpt
-brew install evernote
+brew install chrome
 brew install firefox
-brew install nordvpn
 brew install obsidian
-brew install protonmail-bridge
+brew install proton-drive
+brew install proton-mail-bridge
+brew install proton-pass
+brew install protonvpn
 brew install spotify
 
 

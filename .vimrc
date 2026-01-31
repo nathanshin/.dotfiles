@@ -11,6 +11,12 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
+" Auto-create missing directories before saving
+augroup Mkdir
+  autocmd!
+  autocmd BufWritePre * call mkdir(expand('<afile>:p:h'), 'p')
+augroup END
+
 " Plug-in Management
 if empty(glob('~/.vim/autoload/plug.vim'))
     silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -28,6 +34,7 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Plugin configs
+let g:ctrlp_custom_ignore = '\v[\/](_docs|venv)$'
 let g:NERDTreeQuitOnOpen = 1
 
 " leader commands
