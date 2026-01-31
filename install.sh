@@ -15,3 +15,15 @@ ln -sfv "$DOTFILES_DIR/.tmux.conf" ~
 ln -sfv "$DOTFILES_DIR/.vimrc" ~
 
 source ~/.bash_profile;
+
+# Ensure init scripts are executable
+chmod +x "$DOTFILES_DIR/init/"*.sh || true
+
+# Install homebrew
+"$DOTFILES_DIR/init/install_homebrew.sh"
+
+# Install homebrew packages
+"$DOTFILES_DIR/init/brew.sh"
+
+# Update macos defaults
+"$DOTFILES_DIR/init/macos.sh"
