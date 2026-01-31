@@ -56,8 +56,8 @@ brew install ripgrep
 
 # Install casks
 brew install chatgpt
-brew install chrome
 brew install firefox
+brew install google-chrome
 brew install obsidian
 brew install proton-drive
 brew install proton-mail-bridge
